@@ -3,4 +3,3 @@ torchvision
 pandas
 numpy
 matplotlib
-tqdm

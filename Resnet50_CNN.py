@@ -88,4 +88,4 @@ def test_model(model, testloader):
 
 #Evaluate the model
 test_model(model=model,
-          testloader=test_dataloader)
+          testloader=test_dataloader) #Test function

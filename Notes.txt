@@ -1,0 +1,43 @@
+If you want to clone a GitHub repository, make changes, and then push your modified version to your own GitHub repository, follow these steps:
+
+First, clone the repository you want to work on:
+git clone <original-repo-url>
+
+Then navigate to the repository
+cd repo-name
+
+Create a new github repository in your github
+
+Since the cloned repo points to the original author’s repo, you need to change it to your own:
+
+Check the Current Remote
+git remote -v
+
+Remove the Existing Remote
+git remote remove origin
+
+Add Your New GitHub Repository
+git remote add origin <your-new-repo-url>
+
+Make Changes to the Code
+Edit files, add new files, modify models, or update configurations as needed.
+
+Add & Commit Changes
+git add .
+git commit -m "Updated files"
+
+Push to Your GitHub Repository
+git push -u origin main
+
+If the original repository had a different default branch (e.g., master instead of main), use:
+
+git push -u origin master
+
+Setting up virtual environment without use of Conda
+If virtualenv is not installed
+sudo apt install python3-virtualenv
+
+After the installation run,
+python3 -m virtualenv ~/Envs/environment_name
+
+source ~/Envs/environment_name/bin/activate
